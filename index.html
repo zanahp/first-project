@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Succulents</title>
+</head>
+<body>
+    <div>
+        <h1>
+            Succulents
+        </h1>
+    
+        <h2>
+            The easy plant
+        </h2>
+
+    <hr />
+
+        <img src="https://cdn.shopify.com/s/files/1/1419/7120/articles/Succulent_1_800x.jpg?v=1602774738" 
+             alt="suculent-group"/>
+
+    <hr />
+
+        <span>     
+            <p1>
+                Succulents are easygoing beautiful plants. They vary in size, color, and shape. 
+                These plants don't require much attention, from you or the sun. There's a 
+                succulent out there for everyone, no need to worry about allergies. 
+                Succulents are the plants that keep on giving, with some patience and guidance. 
+        
+    <br />  
+
+                <a class="Ambius"
+                   href="https://www.ambius.com/indoor-plants/the-ultimate-guide-to-succulents/"
+                   target="_blank"
+                   ><strong>Learn more </strong>
+            </a> 
+            </p1>
+        </span>
+
+    <br />   
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+        <button>
+            More about Succulents
+        </button> 
+        <p2>
+            Coded by Zanah Paret
+        </p2>
+    </div>
+
+    <script>
+        function moreInfo() {
+            let name = prompt("What is your name?");
+            let plants = prompt("Are you interested in succulents? (yes or no)");
+                plants = plants.toLowerCase();
+                plants = plants.trim();
+            let h2 = document.querySelector("h2");
+                if (plants === "yes")
+                {h2.innerHTML = "Happy planting " + name + "!";}
+                else {h2.innerHTML = "Hope to change your mind " + name + ". 😊";} }
+
+        let moreAboutScculents = document.querySelector("button");
+        moreAboutScculents.addEventListener("click", moreInfo);
+    </script>
+</body>
+</html>
